@@ -1,0 +1,33 @@
+body {
+    background-color: tomato;
+    grid-template-rows: 200px 1fr;
+    display: grid;
+}
+
+#navbar {
+    background-color: purple;
+    position: fixed;
+    grid-row: 1 / 2;
+}
+
+#main-doc {
+    background-color: pink;
+    grid-row: 2 / 3;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: teal;
+        grid-template-columns: 1fr 4fr;
+        display: grid; 
+    }
+
+    #navbar {
+        grid-column: 1 / 2;
+    }
+
+    #main-doc {
+        grid-column: 2 / 3;
+    }
+
+}
