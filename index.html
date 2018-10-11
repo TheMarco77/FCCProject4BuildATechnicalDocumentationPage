@@ -72,7 +72,6 @@
                     <p><h1>Hello world</h1>
                         To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
                     </p>
-
                     <code>
                             function greetMe(yourName) {
                                 <br>alert("Hello " + yourName);
@@ -84,9 +83,6 @@
 
 
                     <code></code>
-
-                    
-
 
             </section>
 
@@ -102,8 +98,6 @@
                     <br> vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be
                     <br> properties of objects, executing as loosely typed methods.</p>
                     
-                    <code></code>
-
                     <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods.
                     <br> You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement
                     <br> interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
@@ -115,16 +109,27 @@
                     <br> code in the current document. When you declare a variable within a function, it is called a local variable, because it is available
                     <br> only within that function.</p><br>
 
+                    <br>
+                    <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local
+                    <br> to the function (or global scope) that the block resides within. For example the following code will log 5, because the 
+                    <br>scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
+
                     <code>if (true) {<br>
                             var x = 5;<br>
                         }
                         console.log(x);  // 5
                     </code>
 
-                    <br>
-                    <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local
-                    <br> to the function (or global scope) that the block resides within. For example the following code will log 5, because the 
-                    <br>scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
+                    <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015</p>
+
+                    <code>
+                            if (true) {
+                                <br>let y = 5;
+                                <br>}
+                                <br>console.log(y);
+                                <br>// ReferenceError: y is not defined
+                    </code>
+
             </section>
             <section class="main-section" id="Data_Types">
                     <header><h1>Data Types</h1></header>
