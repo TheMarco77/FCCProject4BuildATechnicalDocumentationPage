@@ -1,31 +1,40 @@
 body {
-    background-color: #FFFFFF;
-    grid-template-rows: 200px 1fr;
+    /*background-color: #FFFFFF;
+    background-color: purple;*/
+    grid-template-rows: 240px 1fr;
     display: grid;
 }
 
 #navbar {
-    background-color: #F8F8F8;
+    /*background-color: #F8F8F8;*/
     /*position: fixed;*/
-    /*padding: 10px;
-    border-radius: 8px;*/
+    background-color: green;
+    padding: 10px;
     grid-row: 1 / 2;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.class-link {
+    background-color: pink;
 }
 
 #main-doc {
-    background-color: #FFFFFF;
-    padding: 20px;
-    grid-row: 2 / 3;
+    /*background-color: #F8F8F8;*/
+    background-color: lightskyblue;
+    padding: 10px;
+    border-style: solid;
 }
 
 .code {
     background-color: #F8F8F8;
     padding: 10px;
+    align-content: center;
 }
 
 @media screen and (min-width: 1440px) {
     body {
-        background-color: #FFFFFF;
+        /*background-color: #FFFFFF;*/
         grid-template-columns: 1fr 4fr;
         display: grid; 
     }
