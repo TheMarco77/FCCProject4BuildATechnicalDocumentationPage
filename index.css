@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    grid-template-rows: 240px 1fr;
+    grid-template-rows: 280px 1fr;
     display: grid;
     /*grid-template-columns: 240px 1fr;
     display: grid;*/
@@ -9,14 +9,14 @@ body {
 #navbar {
     background-color: white;
     font-family: 'K2D', sans-serif;
-    border: 5px;
+    grid-row: 1 / 2;
+    position: relative;
+    /*border: 5px;
     border-style: solid;
     border-width: 1px;
-    /*font-size: 15px;*/
-    /*top: 0;*/
-    position: relative;
-    padding: 8px;
-    grid-row: 1 / 2;
+    font-size: 15px;*/
+    /*top: 0;
+    padding: 8px;*/ 
 }
 
 .class-link {
@@ -26,7 +26,6 @@ body {
 #main-doc {
     grid-row: 2 / 3;
     background-color: white;
-    padding: 5px;
 }
 
 .pre {
