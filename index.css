@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    grid-template-rows: 230px 1fr;
+    grid-template-rows: 220px 1fr;
     display: grid;
     border-bottom: 10px;
     /*grid-template-columns: 240px 1fr;
