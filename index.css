@@ -1,8 +1,13 @@
 body {
     font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
     grid-template-rows: 220px 1fr;
     display: grid;
     border-bottom: 10px;
+=======
+    grid-template-rows: 290px 1fr;
+    display: grid;
+>>>>>>> 8db0f71af12f5e4b51940a0f225daac252c95282
     /*grid-template-columns: 240px 1fr;
     display: grid;*/
 }
@@ -42,7 +47,11 @@ body {
 
 @media screen and (min-width: 1440px) {
     body {
+<<<<<<< HEAD
         grid-template-columns: 240px 1fr;
+=======
+        grid-template-columns: 250px 1fr;
+>>>>>>> 8db0f71af12f5e4b51940a0f225daac252c95282
         display: grid;
         /*grid-template-rows: 250px 1fr;
         display: grid;*/
